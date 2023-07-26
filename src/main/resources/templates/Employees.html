@@ -22,10 +22,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="Employees:${Employees}"></tr>
-                <td th:text="${Employees.firstName}"></td>
-                <td th:text="${Employees.lastName}"></td>
-                <td th:text="${Employees.email}"></td>
+                <tr th:each="Employee:${Employees}"></tr>
+                <td th:text="${Employee.firstName}"></td>
+                <td th:text="${Employee.lastName}"></td>
+                <td th:text="${Employee.email}"></td>
 
             </tbody>
         </table>

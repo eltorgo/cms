@@ -12,11 +12,11 @@ public class EmpController {
     @Autowired
     private EmpService empservice;
     public EmpController(EmpService empservice){
-        this.empservice= empservice;
+        this.empservice=empservice;
     }
     @GetMapping("/Employees")
     public String ListofEmps(Model model){
-        model.addAttribute("Employees", empservice.getAllEmps());
+        model.addAttribute("Employee", empservice.getAllEmps());
         return "Employees";
     }
 

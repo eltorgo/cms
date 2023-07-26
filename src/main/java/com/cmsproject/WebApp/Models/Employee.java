@@ -2,12 +2,16 @@ package com.cmsproject.WebApp.Models;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Table;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.Id;
 import javax.persistence.Entity;
 
 @Entity
 @Table(name="Employees")
 public class Employee {
+    @Autowired
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

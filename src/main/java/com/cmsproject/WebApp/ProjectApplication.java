@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.cmsproject.WebApp.Repositories")
+@ComponentScan(basePackages = "com.cmsproject.WebApp.Controllers")
+
 public class ProjectApplication {
 
 	public static void main(String[] args) {
