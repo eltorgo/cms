@@ -7,10 +7,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class ProjectController {
     
-    @GetMapping("/index")
+    @GetMapping("/employees")
    
     public String goHome(){
-        return "index";
+        return "Employees";
     }
     
 }
